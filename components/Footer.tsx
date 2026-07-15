@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
-              Premium wholesale clothing for retailers, distributors, and fashion businesses.
+              Premium wholesale clothing for businesses, distributors, and fashion businesses.
             </p>
           </div>
 

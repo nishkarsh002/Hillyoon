@@ -3,7 +3,7 @@ import { Skiper49 } from "@/components/ui/skiper-ui/skiper49";
 
 export default function FeaturedProductsSection() {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         {/* Header */}
         <div className="flex items-end justify-between gap-4 mb-10">

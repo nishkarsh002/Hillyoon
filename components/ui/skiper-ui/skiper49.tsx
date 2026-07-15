@@ -62,7 +62,7 @@ const Carousel_003 = ({
   const css = `
   .Carousal_003 {
     width: 100%;
-    height: 480px;
+    height: 425px;
     padding-bottom: 0px !important;
   }
   

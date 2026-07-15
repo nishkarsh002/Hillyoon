@@ -30,11 +30,11 @@ export default function HeroSection() {
             <br />
             <span className="text-[var(--accent)]">Apparel</span>
             <br />
-            for Retailers
+            for businesses
           </h1>
 
           <p className="text-lg sm:text-xl text-neutral-400 leading-relaxed mb-10 max-w-xl">
-            hilooyoon supplies retailers, wholesalers, and distributors with high-quality clothing
+            hilooyoon supplies businesses, wholesalers, and distributors with high-quality clothing
             designed for consistent performance and strong sell-through.
           </p>
 
