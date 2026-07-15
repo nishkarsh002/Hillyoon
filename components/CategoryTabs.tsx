@@ -6,7 +6,8 @@ import { products } from "@/data/products"
 import ProductCard from "@/components/ProductCard"
 
 // Build category counts
-const allCategories = ["All", ...Array.from(new Set(products.map((p) => p.category))).sort()]
+const categories = Array.from(new Set(products.map((p) => p.category))).sort()
+const allCategories = [...categories, "All"]
 
 const countByCategory: Record<string, number> = { All: products.length }
 products.forEach((p) => {
@@ -14,13 +15,23 @@ products.forEach((p) => {
 })
 
 export default function CategoryTabs() {
-  const [active, setActive] = useState("All")
+  const [active, setActive] = useState("T-Shirts")
 
   const filtered = active === "All" ? products : products.filter((p) => p.category === active)
 
   return (
     <section className="py-16 bg-white">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
+
+        {/* Heading */}
+        <div className="mb-8">
+          <span className="text-xs uppercase tracking-[0.3em] text-[#c8a96e] font-semibold">
+            Browse by Category
+          </span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-neutral-900 leading-tight">
+            Our Products
+          </h2>
+        </div>
 
         {/* Tab bar */}
         <div className="flex items-center gap-2 flex-wrap mb-10">
