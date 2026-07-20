@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
@@ -18,17 +17,10 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-white border-b border-[var(--border)]">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 sm:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="hilooyoon home" className="flex items-center">
-          <Image
-            src="/imgs/image.png"
-            alt="hilooyoon"
-            width={100}
-            height={100}
-            priority
-            
-          />
+        <Link href="/" aria-label="hilooyoon home" className="flex items-center shrink-0">
+          <span className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#c8a96e] to-neutral-900 tracking-widest">HILLYOON</span>
         </Link>
 
         {/* Desktop links */}
