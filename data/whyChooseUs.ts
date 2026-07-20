@@ -8,44 +8,44 @@ export interface WhyChooseUsItem {
 export const whyChooseUsItems: WhyChooseUsItem[] = [
   {
     id: "quality",
-    title: "Uncompromising Quality",
+    title: "High-Quality Manufacturing",
     description:
-      "Every garment is produced in certified facilities and undergoes multi-stage quality checks before dispatch — so you deliver consistent products your customers trust.",
+      "Our garments are produced under strict quality inspection processes, ensuring every piece meets international standards before it leaves our facility.",
     icon: "quality",
   },
   {
     id: "pricing",
-    title: "Competitive Wholesale Pricing",
+    title: "Competitive Pricing",
     description:
-      "We work directly with manufacturers and fabric mills to cut out the middlemen, passing the savings on to you with transparent, tiered pricing for all order sizes.",
+      "We offer transparent, competitive wholesale pricing with flexible MOQ options — making premium apparel accessible for businesses of every scale.",
     icon: "pricing",
   },
   {
-    id: "reliability",
-    title: "Reliable Fulfilment",
+    id: "customisation",
+    title: "Custom Manufacturing",
     description:
-      "Strict lead times and dedicated account management mean your orders arrive on schedule, every time — giving you the confidence to plan your inventory with certainty.",
+      "Private label production, OEM & ODM services, embroidery, printing, and customized packaging — we build your brand exactly the way you envision it.",
+    icon: "customisation",
+  },
+  {
+    id: "reliability",
+    title: "On-Time Delivery",
+    description:
+      "Our dedicated sampling team and efficient logistics network ensure your orders are produced and shipped on schedule, every time.",
     icon: "reliability",
   },
   {
     id: "range",
-    title: "Wide Product Range",
+    title: "Global Export Capability",
     description:
-      "From core basics to seasonal fashion pieces, our catalogue covers every segment — letting you source everything you need from a single trusted supplier.",
+      "We serve buyers across Europe, the UK, the US, the Middle East, Africa, and the Asia-Pacific region with full global logistics and export support.",
     icon: "range",
   },
   {
-    id: "customisation",
-    title: "Custom Branding Options",
-    description:
-      "We offer embroidery, screen printing, woven labels, and custom packaging to help you create a fully branded product line that stands out on the shelf.",
-    icon: "customisation",
-  },
-  {
     id: "support",
-    title: "Dedicated B2B Support",
+    title: "Customer-Centric Approach",
     description:
-      "Our team of wholesale specialists is on hand to help you find the right products, negotiate the right quantities, and grow your business at every stage.",
+      "Professional communication, product customization, reliable production capacity, and transparent business practices — we're your long-term strategic partner.",
     icon: "support",
   },
 ]

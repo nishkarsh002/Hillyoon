@@ -61,7 +61,7 @@ export default function HeroSection() {
             <div className="w-px h-10 bg-neutral-800" />
             <div>
               <p className="text-3xl font-bold text-white">100+</p>
-              <p className="text-xs text-neutral-500 mt-0.5 uppercase tracking-wide">Retail Partners</p>
+              <p className="text-xs text-neutral-500 mt-0.5 uppercase tracking-wide">business Partners</p>
             </div>
             <div className="w-px h-10 bg-neutral-800" />
             <div>

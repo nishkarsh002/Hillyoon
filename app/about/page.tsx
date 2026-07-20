@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import CompanyStorySection from "@/sections/CompanyStorySection"
 import MissionVisionSection from "@/sections/MissionVisionSection"
 import WhyChooseUsSection from "@/sections/WhyChooseUsSection"
+import TeamSection from "@/sections/TeamSection"
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -19,6 +20,7 @@ export default function AboutPage() {
       <CompanyStorySection />
       <MissionVisionSection />
       <WhyChooseUsSection />
+      <TeamSection />
     </>
   )
 }

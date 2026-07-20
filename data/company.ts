@@ -1,11 +1,27 @@
 export const companyStory = `
-hilooyoon was founded with a single belief — that quality wholesale clothing should be accessible without compromise. What started as a small atelier supplying local boutiques has grown into a trusted B2B partner for businesses, distributors, and fashion brands across the region.
+Hillyoon Exports is a leading apparel manufacturer and export company dedicated to supplying premium-quality garments to international buyers, importers, wholesalers, retailers, and fashion brands worldwide.
 
-Every piece in our catalogue is designed in-house and manufactured in facilities that meet strict quality and ethical standards. We work directly with fabric mills to source materials that balance performance, comfort, and durability — ensuring your end customers keep coming back.
+With a strong focus on quality, innovation, and customer satisfaction, we provide customized clothing solutions that meet global fashion trends and international standards.
 
-Over the years we have built long-term relationships with clients who value consistency, transparency, and competitive pricing on bulk orders. Whether you are stocking a single storefront or distributing across multiple locations, hilooyoon is ready to scale with your business.
+From our state-of-the-art manufacturing facilities, we deliver a wide range of men's apparel — from classic T-shirts and polo shirts to hoodies, joggers, and streetwear — all crafted to meet the demands of global markets.
 `
 
-export const mission = `To deliver premium-quality apparel to B2B partners with consistent craftsmanship, competitive wholesale pricing, and a seamless ordering experience — empowering businesses and distributors to build businesses their customers love.`
+export const mission = `To provide superior quality apparel at competitive prices, establish long-term partnerships with global clients, ensure timely production and efficient shipment services, and continuously innovate in design, manufacturing, and sustainability.`
 
-export const vision = `To become the most trusted wholesale clothing brand in the region, recognised for quality, reliability, and a genuine commitment to our partners' growth.`
+export const vision = `To become a trusted global partner in the apparel industry by delivering innovative, sustainable, and high-quality garments worldwide.`
+
+export const contactInfo = {
+  email: "Hillyoonexports@gmail.com",
+  website: "www.hillyoon.com",
+  phone: "+91 97189 94500",
+  tagline: "Crafting Quality Apparel for Global Markets.",
+}
+
+export const exportRegions = [
+  "Europe",
+  "United Kingdom",
+  "United States",
+  "Middle East",
+  "Africa",
+  "Asia-Pacific Region",
+]

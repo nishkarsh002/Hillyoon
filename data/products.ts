@@ -16,7 +16,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "Our flagship heavyweight cotton T-shirt range. Features a structured collar, reinforced stitching, and a relaxed fit available in a wide colour palette. A wholesale essential for any retail line.",
-    images: ["/imgs/tshirts.jpeg", "/imgs/tshirts2.jpeg", "/imgs/tshirt1.jpeg"],
+    images: ["/imgs/tshirts.jpeg", "/imgs/tshirt2.jpeg", "/imgs/tshirt1.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Navy", "Olive", "Grey"],
     featured: true,
@@ -27,7 +27,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A clean, minimal tee in a premium 200gsm cotton blend. Fade-resistant and pre-shrunk — built for consistency across large wholesale orders.",
-    images: ["/imgs/tshirts2.jpeg", "/imgs/tshirt2.jpeg", "/imgs/tshirt3.jpeg"],
+    images: ["/imgs/tshirt1.jpeg", "/imgs/tshirt2.jpeg", "/imgs/tshirt3.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Charcoal"],
     featured: true,
@@ -60,7 +60,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A timeless crew-neck tee in a soft 180gsm jersey. A budget-friendly core SKU that delivers volume for entry-level and value retail lines.",
-    images: ["/imgs/tshirt3.jpeg", "/imgs/tshirts2.jpeg"],
+    images: ["/imgs/tshirt3.jpeg", "/imgs/tshirt1.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Grey", "Beige"],
     featured: false,

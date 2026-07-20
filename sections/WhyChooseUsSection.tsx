@@ -39,7 +39,7 @@ const ICONS: Record<string, React.ReactNode> = {
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="text-center mb-14">
           <span className="text-xs uppercase tracking-[0.3em] text-[var(--accent)] font-semibold">

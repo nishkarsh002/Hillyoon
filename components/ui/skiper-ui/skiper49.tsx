@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils";
 const Skiper49 = () => {
   const images = [
     { src: "/imgs/tshirts.jpeg", alt: "Premium Tee Collection" },
-    { src: "/imgs/tshirts2.jpeg", alt: "Essential Tee" },
+    { src: "/imgs/tshirt3.jpeg", alt: "Classic Crew Tee" },
     { src: "/imgs/tshirt1.jpeg", alt: "Statement Graphic Tee" },
     { src: "/imgs/hoodies.jpeg", alt: "Oversized Fleece Hoodie" },
     { src: "/imgs/trouser.jpeg", alt: "Slim-Fit Chino Trouser" },

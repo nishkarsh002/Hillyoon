@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function AboutPreviewSection() {
   return (
-    <section className="py-20 bg-[var(--muted)]">
+    <section className="py-12 bg-[var(--muted)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Visual block */}
