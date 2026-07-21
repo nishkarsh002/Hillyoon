@@ -20,22 +20,22 @@ import { cn } from "@/lib/utils";
 
 const Skiper49 = () => {
   const images = [
-    { src: "/imgs/tshirts.jpeg", alt: "Premium Tee Collection" },
+    { src: "/imgs/tshirt.jpeg", alt: "Premium Tee Collection" },
     { src: "/imgs/tshirt3.jpeg", alt: "Classic Crew Tee" },
-    { src: "/imgs/tshirt1.jpeg", alt: "Statement Graphic Tee" },
-    { src: "/imgs/hoodies.jpeg", alt: "Oversized Fleece Hoodie" },
+    { src: "/imgs/tshirt6.jpeg", alt: "Statement Graphic Tee" },
+    { src: "/imgs/hoodie.jpeg", alt: "Oversized Fleece Hoodie" },
     { src: "/imgs/trouser.jpeg", alt: "Slim-Fit Chino Trouser" },
     { src: "/imgs/lowers.jpeg", alt: "Track Lower" },
-    { src: "/imgs/set1.jpeg", alt: "Co-ord Set Classic" },
-    { src: "/imgs/set2.jpeg", alt: "Co-ord Set Premium" },
+    { src: "/imgs/hoodie2.jpeg", alt: "Co-ord Set Classic" },
+    { src: "/imgs/hoodie4.jpeg", alt: "Co-ord Set Premium" },
     { src: "/imgs/shorts.jpeg", alt: "Utility Cargo Shorts" },
     { src: "/imgs/lower1.jpeg", alt: "Premium Jogger" },
-    { src: "/imgs/tshirt2.jpeg", alt: "Branded Logo Tee" },
+    { src: "/imgs/tshirt3.jpeg", alt: "Branded Logo Tee" },
   ];
 
   return (
     <div className="flex h-full w-full items-center justify-center overflow-hidden">
-      <Carousel_003 images={images} showNavigation loop />
+      <Carousel_003 images={images} showNavigation loop autoplay />
     </div>
   );
 };

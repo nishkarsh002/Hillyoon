@@ -20,7 +20,7 @@ export default function AboutPage() {
       <CompanyStorySection />
       <MissionVisionSection />
       <WhyChooseUsSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
     </>
   )
 }

@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Skiper16 } from "@/components/ui/skiper-ui/skiper16"
 
 const team = [
   {
@@ -36,6 +35,42 @@ export default function TeamSection() {
           </p>
         </div>
 
+        {/* Team videos */}
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-3xl border border-[var(--border)] bg-neutral-900 shadow-xl shadow-black/10">
+            <div className="border-b border-white/10 px-6 py-4">
+              <h3 className="text-lg font-semibold text-white">Team Story</h3>
+              <p className="mt-1 text-sm text-neutral-300">Watch how our team brings every collection to life.</p>
+            </div>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-80 w-full object-cover"
+            >
+              <source src="/videos/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-[var(--border)] bg-neutral-900 shadow-xl shadow-black/10">
+            <div className="border-b border-white/10 px-6 py-4">
+              <h3 className="text-lg font-semibold text-white">Production Process</h3>
+              <p className="mt-1 text-sm text-neutral-300">Get a behind-the-scenes look at our manufacturing workflow.</p>
+            </div>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-80 w-full object-cover"
+            >
+              <source src="/videos/video2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        {/* Team cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto mt-16">
           {team.map((member) => (
             <div
@@ -66,14 +101,6 @@ export default function TeamSection() {
             </div>
           ))}
         </div>
-
-        {/* Team Showcase - Skiper16 */}
-        {/* <div>
-          <Skiper16 />
-        </div> */}
-
-        {/* Team cards */}
-        
       </div>
     </section>
   )

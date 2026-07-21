@@ -1,117 +1,50 @@
-"use client";
+"use client"
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import ReactLenis from "lenis/react";
-import React, { useRef } from "react";
+import React from "react"
 
-const projects = [
+const showcaseItems = [
   {
-    title: "Team Member 1",
-    src: "/imgs/tshirts.jpeg",
+    title: "Craftsmanship",
+    subtitle: "Premium apparel quality",
+    image: "/imgs/tshirt.jpeg",
   },
   {
-    title: "Team Member 2",
-    src: "/imgs/hoodies.jpeg",
+    title: "Innovation",
+    subtitle: "Modern style and fit",
+    image: "/imgs/hoodie.jpeg",
   },
   {
-    title: "Team Member 3",
-    src: "/imgs/trouser.jpeg",
+    title: "Reliability",
+    subtitle: "Consistent bulk delivery",
+    image: "/imgs/trouser.jpeg",
   },
-  {
-    title: "Team Member 4",
-    src: "/imgs/set1.jpeg",
-  },
-  {
-    title: "Team Member 5",
-    src: "/imgs/shorts.jpeg",
-  },
-];
+]
 
-const StickyCard_001 = ({
-  i,
-  title,
-  src,
-  progress,
-  range,
-  targetScale,
-}: {
-  i: number;
-  title: string;
-  src: string;
-  progress: any;
-  range: [number, number];
-  targetScale: number;
-}) => {
-  const container = useRef<HTMLDivElement>(null);
-
-  const scale = useTransform(progress, range, [1, targetScale]);
-
+export function Skiper16() {
   return (
-    <div
-      ref={container}
-      className="sticky top-0 flex items-center justify-center"
-    >
-      <motion.div
-        style={{
-          scale,
-          top: `calc(-5vh + ${i * 20 + 250}px)`,
-        }}
-        className="rounded-4xl relative -top-1/4 flex h-[250px] sm:h-[300px] w-[90vw] sm:w-[500px] origin-top flex-col overflow-hidden"
-      >
-        <img src={src} alt={title} className="h-full w-full object-cover" />
-      </motion.div>
-    </div>
-  );
-};
+    <section className="mx-auto mb-12 max-w-6xl rounded-3xl border border-[var(--border)] bg-[var(--muted)]/40 p-6 sm:p-8">
+      <div className="mb-6 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c8a96e]">
+          Team Showcase
+        </p>
+        <h3 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl">
+          The spirit behind our collections
+        </h3>
+      </div>
 
-const Skiper16 = () => {
-  const container = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start start", "end end"],
-  });
+      <div className="grid gap-4 md:grid-cols-3">
+        {showcaseItems.map((item) => (
+          <div key={item.title} className="overflow-hidden rounded-2xl border border-white/70 bg-white shadow-sm">
+            <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
+            <div className="p-4">
+              <h4 className="text-lg font-semibold text-neutral-900">{item.title}</h4>
+              <p className="mt-1 text-sm text-neutral-600">{item.subtitle}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
 
-  return (
-    <ReactLenis root>
-      <main
-        ref={container}
-        className="relative flex w-full flex-col items-center justify-center pb-[40vh] sm:pb-[35vh] px-4"
-      >
-        {projects.map((project, i) => {
-          const targetScale = Math.max(
-            0.5,
-            1 - (projects.length - i - 1) * 0.1,
-          );
-          return (
-            <StickyCard_001
-              key={`p_${i}`}
-              i={i}
-              {...project}
-              progress={scrollYProgress}
-              range={[i * 0.25, 1]}
-              targetScale={targetScale}
-            />
-          );
-        })}
-      </main>
-    </ReactLenis>
-  );
-};
-
-export { Skiper16, StickyCard_001 };
-
-/**
- * Skiper 16 StickyCard_001 — React + Framer Motion
- * We respect the original creators. This is an inspired rebuild with our own taste and does not claim any ownership.
- *
- * License & Usage:
- * - Free to use and modify in both personal and commercial projects.
- * - Attribution to Skiper UI is required when using the free version.
- * - No attribution required with Skiper UI Pro.
- *
- * Feedback and contributions are welcome.
- *
- * Author: @gurvinder-singh02
- * Website: https://gxuri.me
- * Twitter: https://x.com/Gur__vi
- */
+export default Skiper16

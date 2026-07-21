@@ -16,7 +16,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "Our flagship heavyweight cotton T-shirt range. Features a structured collar, reinforced stitching, and a relaxed fit available in a wide colour palette. A wholesale essential for any retail line.",
-    images: ["/imgs/tshirts.jpeg", "/imgs/tshirt2.jpeg", "/imgs/tshirt1.jpeg"],
+    images: ["/imgs/tshirt.jpeg", "/imgs/tshirt3.jpeg", "/imgs/tshirt6.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Navy", "Olive", "Grey"],
     featured: true,
@@ -27,7 +27,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A clean, minimal tee in a premium 200gsm cotton blend. Fade-resistant and pre-shrunk — built for consistency across large wholesale orders.",
-    images: ["/imgs/tshirt1.jpeg", "/imgs/tshirt2.jpeg", "/imgs/tshirt3.jpeg"],
+    images: ["/imgs/tshirt4.jpeg", "/imgs/tshirt7.jpeg", "/imgs/tshirt8.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Charcoal"],
     featured: true,
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A bold graphic tee on a premium ring-spun cotton base. Available for custom artwork — perfect for branded drops and limited-edition retail collections.",
-    images: ["/imgs/tshirt1.jpeg", "/imgs/tshirt2.jpeg"],
+    images: ["/imgs/tshirt6.jpeg", "/imgs/tshirt3.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Sand"],
     featured: true,
@@ -49,7 +49,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A signature branded tee featuring embroidered or printed logo placement. Ideal for retail-ready branded merchandise programmes.",
-    images: ["/imgs/tshirt2.jpeg", "/imgs/tshirt3.jpeg", "/imgs/tshirts.jpeg"],
+    images: ["/imgs/tshirt10.jpeg", "/imgs/tshirt3.jpeg", "/imgs/tshirt4.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Navy"],
     featured: false,
@@ -60,7 +60,7 @@ export const products: Product[] = [
     category: "T-Shirts",
     description:
       "A timeless crew-neck tee in a soft 180gsm jersey. A budget-friendly core SKU that delivers volume for entry-level and value retail lines.",
-    images: ["/imgs/tshirt3.jpeg", "/imgs/tshirt1.jpeg"],
+    images: ["/imgs/tshirt3.jpeg", "/imgs/tshirt6.jpeg"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     colors: ["White", "Black", "Grey", "Beige"],
     featured: false,
@@ -71,7 +71,7 @@ export const products: Product[] = [
     category: "Hoodies",
     description:
       "An ultra-soft 320gsm French terry hoodie with dropped shoulders and a kangaroo pocket. A streetwear favourite available for bulk orders with custom embroidery options.",
-    images: ["/imgs/hoodies.jpeg", "/imgs/set1.jpeg"],
+    images: ["/imgs/hoodie.jpeg", "/imgs/hoodie2.jpeg"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Grey Marl", "Black", "Cream", "Dusty Pink"],
     featured: true,
@@ -155,22 +155,22 @@ export const products: Product[] = [
   },
   {
     id: "coordinated-set-1",
-    name: "Co-ord Set — Classic",
-    category: "Sets",
+    name: "Classic",
+    category: "Hoodies",
     description:
       "A coordinated tee and lower set in complementary tones. Sell as a complete outfit — co-ord sets are among the fastest-growing wholesale categories in casual and streetwear retail.",
-    images: ["/imgs/set1.jpeg", "/imgs/set2.jpeg", "/imgs/hoodies.jpeg"],
+    images: ["/imgs/hoodie2.jpeg", "/imgs/hoodie4.jpeg", "/imgs/hoodie.jpeg"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Navy"],
     featured: true,
   },
   {
     id: "coordinated-set-2",
-    name: "Co-ord Set — Premium",
-    category: "Sets",
+    name: "Premium",
+    category: "Hoodies",
     description:
       "A premium co-ord set with a structured top and relaxed lower in a matching fabric. A high-margin, complete offering ideal for fashion-forward retail collections.",
-    images: ["/imgs/set2.jpeg", "/imgs/set1.jpeg"],
+    images: ["/imgs/hoodie4.jpeg", "/imgs/hoodie2.jpeg"],
     sizes: ["S", "M", "L", "XL"],
     colors: ["White/Beige", "Black/Charcoal", "Navy/Khaki"],
     featured: false,

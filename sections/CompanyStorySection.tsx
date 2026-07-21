@@ -29,6 +29,8 @@ export default function CompanyStorySection() {
               ))}
             </div>
 
+            
+
             {/* Export regions */}
             <div className="mt-8">
               <p className="text-xs uppercase tracking-widest text-neutral-500 font-semibold mb-3">
@@ -47,15 +49,22 @@ export default function CompanyStorySection() {
             </div>
           </div>
 
-          {/* Visual */}
-          <div className="relative h-96 rounded-2xl overflow-hidden">
-            <Image
-              src="/imgs/tshirt1.jpeg"
-              alt="Hillyoon Exports manufacturing"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          {/* Visual: muted autoplay video */}
+          <div className="relative h-96 rounded-2xl overflow-hidden bg-neutral-100">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ opacity: 0.9 }}
+            >
+              <source src="/videos/video1.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="relative z-10 p-6 h-full flex items-end">
+              <p className="text-sm text-white/90 font-medium">Our production & quality standards in action</p>
+            </div>
           </div>
         </div>
       </div>

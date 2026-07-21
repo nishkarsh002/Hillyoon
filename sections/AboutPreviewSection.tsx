@@ -9,7 +9,7 @@ export default function AboutPreviewSection() {
           {/* Visual block */}
           <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
             <Image
-              src="/imgs/set1.jpeg"
+              src="/imgs/hoodie2.jpeg"
               alt="hilooyoon collection"
               fill
               className="object-cover"

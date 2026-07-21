@@ -1,76 +1,150 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
+const slides = [
+  {
+    id: 1,
+    pre: "Effortless",
+    title: "Hilooyoon Essentials",
+    cta: "Shop Essentials",
+    img: "/imgs/tshirt_p.jpeg",
+  },
+  {
+    id: 2,
+    pre: "Premium",
+    title: "WORKWEAR",
+    cta: "Browse Workwear",
+    img: "/imgs/hoodies_p.jpeg",
+  },
+  {
+    id: 3,
+    pre: "New",
+    title: "CORE COLLECTION",
+    cta: "See The Range",
+    href: "/products",
+    img: "/imgs/hoodie2.jpeg",
+  },
+]
+
 export default function HeroSection() {
+  const [index, setIndex] = useState(0)
+  const intervalRef = useRef<number | null>(null)
+  const touchStartX = useRef<number | null>(null)
+
+  useEffect(() => {
+    startAuto()
+    return stopAuto
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index])
+
+  function startAuto() {
+    stopAuto()
+    intervalRef.current = window.setInterval(() => {
+      setIndex((i) => (i + 1) % slides.length)
+    }, 5000)
+  }
+
+  function stopAuto() {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current)
+      intervalRef.current = null
+    }
+  }
+
+  function goTo(i: number) {
+    setIndex(i)
+  }
+
+  function next() {
+    setIndex((i) => (i + 1) % slides.length)
+  }
+
+  function prev() {
+    setIndex((i) => (i - 1 + slides.length) % slides.length)
+  }
+
+  function onTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX
+    stopAuto()
+  }
+
+  function onTouchEnd(e: React.TouchEvent) {
+    const endX = e.changedTouches[0].clientX
+    const startX = touchStartX.current
+    if (startX == null) return
+    const diff = startX - endX
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) next()
+      else prev()
+    }
+    startAuto()
+  }
+
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-[var(--foreground)] overflow-hidden">
-      {/* Background hero image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/imgs/tshirts.jpeg"
-          alt="hilooyoon clothing collection"
-          fill
-          className="object-cover opacity-25"
-          priority
-          sizes="100vw"
-        />
-      </div>
+    <section
+      className="relative min-h-[92vh] flex items-center justify-center bg-black overflow-hidden"
+      onMouseEnter={stopAuto}
+      onMouseLeave={startAuto}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* Background slides */}
+      {slides.map((s, i) => (
+        <div
+          key={s.id}
+          className={`absolute inset-0 transition-opacity duration-800 ease-in-out ${
+            i === index ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+          aria-hidden={i !== index}
+        >
+          <Image src={s.img} alt={s.title} fill className="object-cover" priority sizes="100vw" />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+      ))}
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[var(--foreground)] via-[var(--foreground)]/90 to-transparent" />
+      {/* Content */}
+      <div className="relative z-20 w-full">
+        <div className="mx-auto max-w-6xl px-6 py-28 flex flex-col items-center text-center">
+          <p className="text-sm tracking-widest text-white/70 uppercase mb-6">{slides[index].pre}</p>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-8 py-24 w-full">
-        <div className="max-w-2xl">
-          <span className="inline-block text-xs uppercase tracking-[0.3em] text-[var(--accent)] font-semibold mb-6">
-            B2B Wholesale Clothing
-          </span>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6">
+            {slides[index].title}
+          </h2>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
-            Premium
-            <br />
-            <span className="text-[var(--accent)]">Apparel</span>
-            <br />
-            for businesses
-          </h1>
-
-          <p className="text-lg sm:text-xl text-neutral-400 leading-relaxed mb-10 max-w-xl">
-            hilooyoon supplies businesses, wholesalers, and distributors with high-quality clothing
-            designed for consistent performance and strong sell-through.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center h-12 px-8 bg-[#c8a96e] text-white text-sm font-semibold rounded-full hover:bg-[#a8893e] transition-colors duration-200"
-            >
-              Browse Products
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-12 px-8 border border-neutral-600 text-white text-sm font-semibold rounded-full hover:border-[#c8a96e] hover:text-[#c8a96e] transition-colors duration-200"
-            >
-              Get in Touch
-            </Link>
-          </div>
-
-          <div className="mt-16 flex items-center gap-10 border-t border-neutral-800 pt-8">
-            <div>
-              <p className="text-3xl font-bold text-white">500+</p>
-              <p className="text-xs text-neutral-500 mt-0.5 uppercase tracking-wide">SKUs Available</p>
-            </div>
-            <div className="w-px h-10 bg-neutral-800" />
-            <div>
-              <p className="text-3xl font-bold text-white">100+</p>
-              <p className="text-xs text-neutral-500 mt-0.5 uppercase tracking-wide">business Partners</p>
-            </div>
-            <div className="w-px h-10 bg-neutral-800" />
-            <div>
-              <p className="text-3xl font-bold text-white">5★</p>
-              <p className="text-xs text-neutral-500 mt-0.5 uppercase tracking-wide">Partner Rating</p>
-            </div>
+          {/* Indicators */}
+          <div className="mt-10 flex items-center gap-3">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                aria-label={`Go to slide ${i + 1}`}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  i === index ? "bg-white/90 scale-110" : "bg-white/40"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Controls */}
+      <button
+        onClick={prev}
+        aria-label="Previous"
+        className="absolute left-4 top-1/2 z-30 -translate-y-1/2 p-2 bg-black/40 rounded-full text-white hover:bg-black/60 transition"
+      >
+        ‹
+      </button>
+      <button
+        onClick={next}
+        aria-label="Next"
+        className="absolute right-4 top-1/2 z-30 -translate-y-1/2 p-2 bg-black/40 rounded-full text-white hover:bg-black/60 transition"
+      >
+        ›
+      </button>
     </section>
   )
 }
