@@ -11,7 +11,7 @@ export const mission = `To provide superior quality apparel at competitive price
 export const vision = `To become a trusted global partner in the apparel industry by delivering innovative, sustainable, and high-quality garments worldwide.`
 
 export const contactInfo = {
-  email: "Hillyoonexports@gmail.com",
+  email: "info@hillyoonexports.com",
   website: "www.hillyoon.com",
   phone: "+91 97189 94500",
   tagline: "Crafting Quality Apparel for Global Markets.",

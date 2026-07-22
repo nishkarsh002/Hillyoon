@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
@@ -20,8 +21,22 @@ export default function Navbar() {
     <nav className="fixed inset-x-0 top-0 z-50 bg-white border-b border-[var(--border)]">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="hilooyoon home" className="flex items-center shrink-0">
-          <span className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#c8a96e] to-neutral-900 tracking-widest">HILLYOON</span>
+        <Link href="/" aria-label="hillyoon home" className="flex items-center shrink-0 gap-3">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white shadow-sm shadow-black/5">
+            <Image
+              src="/imgs/favicon_io (4)/favicon-32x32.png"
+              alt="hillyoon favicon"
+              width={32}
+              height={32}
+              className="rounded-lg"
+            />
+          </div>
+          <div>
+            {/* <p className="text-xs uppercase tracking-[0.25em] text-[#c8a96e] font-semibold leading-none">Hillyoon</p> */}
+            <span className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#c8a96e] to-neutral-900 tracking-widest">
+              HILLYOON
+            </span>
+          </div>
         </Link>
 
         {/* Desktop links */}

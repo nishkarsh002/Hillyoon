@@ -2,11 +2,11 @@ import Image from "next/image"
 
 const team = [
   {
-    name: "Aryan Mehta",
-    role: "Founder & CEO",
-    bio: "Aryan leads Hillyoon Exports with over a decade of experience in apparel manufacturing and international trade. He drives the company's vision of delivering premium garments to global markets.",
-    image: null, // Replace with "/imgs/team-aryan.jpg" when available
-    initials: "AM",
+    name: "Mr. Shahrukh Khan",
+    role: "Founder & CEO – Hillyoon Exports",
+    bio: "Welcome to Hillyoon Exports. Our vision is to deliver premium apparel and clothing solutions to global markets with quality, reliability, and innovation. We are committed to building strong international partnerships through excellence in manufacturing, timely delivery, and customer satisfaction. At Hillyoon Exports, we believe in creating value, trust, and long-term business relationships across the world. Thank you for being part of our journey toward global success.",
+    image: "/imgs/ceo.png",
+    initials: "SK",
   },
   {
     name: "Zara Khan",

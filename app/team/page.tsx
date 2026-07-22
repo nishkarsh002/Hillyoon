@@ -3,10 +3,10 @@ import TeamSection from "@/sections/TeamSection"
 
 export const metadata: Metadata = {
   title: "Team",
-  description: "Meet the hilooyoon team and watch our featured videos.",
+  description: "Meet the hillyoon team and watch our featured videos.",
   openGraph: {
-    title: "Team | hilooyoon",
-    description: "Meet the hilooyoon team and watch our featured videos.",
+    title: "Team | hillyoon",
+    description: "Meet the hillyoon team and watch our featured videos.",
     type: "website",
   },
 }

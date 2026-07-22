@@ -1,8 +1,8 @@
-# Design Document — hilooyoon B2B Clothing Website
+# Design Document — hillyoon B2B Clothing Website
 
 ## Overview
 
-The hilooyoon website is a static, multi-page B2B marketing and product-showcase platform. It is built with Next.js 16.2.10 (App Router, Turbopack default), React 19, TypeScript 5, and Tailwind CSS v4. There is no backend in this phase; all data comes from typed static files. The site targets retailers, wholesalers, and distributors and must project a premium, minimal aesthetic across all viewport widths (320 px – 1920 px).
+The hillyoon website is a static, multi-page B2B marketing and product-showcase platform. It is built with Next.js 16.2.10 (App Router, Turbopack default), React 19, TypeScript 5, and Tailwind CSS v4. There is no backend in this phase; all data comes from typed static files. The site targets retailers, wholesalers, and distributors and must project a premium, minimal aesthetic across all viewport widths (320 px – 1920 px).
 
 Key Next.js 16 constraints observed from the official docs:
 
@@ -20,7 +20,7 @@ Key Next.js 16 constraints observed from the official docs:
 ### High-Level Structure
 
 ```
-hilooyoon/                     ← workspace root (no src/)
+hillyoon/                     ← workspace root (no src/)
 ├── app/                       ← Next.js App Router pages & root layout
 │   ├── layout.tsx             ← Root layout: Navbar + Footer + fonts + metadata
 │   ├── page.tsx               ← Home page  (/)
@@ -63,7 +63,7 @@ hilooyoon/                     ← workspace root (no src/)
 │   ├── products.ts            ← helper: getFeaturedProducts, getProductById
 │   └── metadata.ts            ← shared buildMetadata() helper
 └── public/
-    └── image.png              ← hilooyoon logo
+    └── image.png              ← hillyoon logo
 ```
 
 ### Rendering Strategy
@@ -114,8 +114,8 @@ export default function Navbar() {
     <nav className="fixed inset-x-0 top-0 z-50 bg-white border-b border-neutral-200">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="hilooyoon home">
-          <Image src="/image.png" alt="hilooyoon" width={120} height={40} priority />
+        <Link href="/" aria-label="hillyoon home">
+          <Image src="/image.png" alt="hillyoon" width={120} height={40} priority />
         </Link>
 
         {/* Desktop links */}
@@ -274,10 +274,10 @@ import './globals.css'
 const geist = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: { template: '%s | hilooyoon', default: 'hilooyoon — B2B Clothing Brand' },
-  description: 'hilooyoon is a premium B2B clothing brand supplying retailers, wholesalers, and distributors with high-quality apparel.',
+  title: { template: '%s | hillyoon', default: 'hillyoon — B2B Clothing Brand' },
+  description: 'hillyoon is a premium B2B clothing brand supplying retailers, wholesalers, and distributors with high-quality apparel.',
   openGraph: {
-    title: 'hilooyoon — B2B Clothing Brand',
+    title: 'hillyoon — B2B Clothing Brand',
     description: 'Premium wholesale clothing for retailers and distributors.',
     type: 'website',
   },
@@ -309,10 +309,10 @@ import { getFeaturedProducts } from '@/lib/products'
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Discover hilooyoon — premium B2B clothing for retailers and wholesalers.',
+  description: 'Discover hillyoon — premium B2B clothing for retailers and wholesalers.',
   openGraph: {
-    title: 'hilooyoon — Home',
-    description: 'Discover hilooyoon — premium B2B clothing for retailers and wholesalers.',
+    title: 'hillyoon — Home',
+    description: 'Discover hillyoon — premium B2B clothing for retailers and wholesalers.',
     type: 'website',
   },
 }
@@ -339,10 +339,10 @@ import { products } from '@/data/products'
 
 export const metadata: Metadata = {
   title: 'Products',
-  description: 'Browse the full hilooyoon product catalogue — wholesale apparel by category.',
+  description: 'Browse the full hillyoon product catalogue — wholesale apparel by category.',
   openGraph: {
-    title: 'Products | hilooyoon',
-    description: 'Browse the full hilooyoon product catalogue.',
+    title: 'Products | hillyoon',
+    description: 'Browse the full hillyoon product catalogue.',
     type: 'website',
   },
 }
@@ -380,7 +380,7 @@ export async function generateMetadata({
     title: product.name,
     description: product.description,
     openGraph: {
-      title: `${product.name} | hilooyoon`,
+      title: `${product.name} | hillyoon`,
       description: product.description,
       type: 'website',
     },
@@ -409,10 +409,10 @@ import WhyChooseUsSection from '@/sections/WhyChooseUsSection'
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about hilooyoon — our story, mission, and why B2B buyers choose us.',
+  description: 'Learn about hillyoon — our story, mission, and why B2B buyers choose us.',
   openGraph: {
-    title: 'About Us | hilooyoon',
-    description: 'Learn about hilooyoon — our story, mission, and why B2B buyers choose us.',
+    title: 'About Us | hillyoon',
+    description: 'Learn about hillyoon — our story, mission, and why B2B buyers choose us.',
     type: 'website',
   },
 }
@@ -437,10 +437,10 @@ import BusinessInfoSection from '@/sections/BusinessInfoSection'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with hilooyoon for wholesale and partnership inquiries.',
+  description: 'Get in touch with hillyoon for wholesale and partnership inquiries.',
   openGraph: {
-    title: 'Contact Us | hilooyoon',
-    description: 'Get in touch with hilooyoon for wholesale and partnership inquiries.',
+    title: 'Contact Us | hillyoon',
+    description: 'Get in touch with hillyoon for wholesale and partnership inquiries.',
     type: 'website',
   },
 }
@@ -610,7 +610,7 @@ No inline `style` attributes — all styling via Tailwind classes or CSS custom 
 
 ## SEO Architecture
 
-Each page exports a static `metadata` object. The root layout defines a `title.template` of `'%s | hilooyoon'` so per-page titles automatically get the brand suffix.
+Each page exports a static `metadata` object. The root layout defines a `title.template` of `'%s | hillyoon'` so per-page titles automatically get the brand suffix.
 
 Every page metadata includes `openGraph` with `title`, `description`, and `type: 'website'`.
 

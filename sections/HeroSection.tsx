@@ -8,16 +8,16 @@ const slides = [
   {
     id: 1,
     pre: "Effortless",
-    title: "Hilooyoon Essentials",
+    title: "Hillyoon Essentials",
     cta: "Shop Essentials",
-    img: "/imgs/tshirt_p.jpeg",
+    img: "/imgs/tshirt/tshirt_p.jpeg",
   },
   {
     id: 2,
     pre: "Premium",
     title: "WORKWEAR",
     cta: "Browse Workwear",
-    img: "/imgs/hoodies_p.jpeg",
+    img: "/imgs/hoodies/hoodies_p.jpeg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const slides = [
     title: "CORE COLLECTION",
     cta: "See The Range",
     href: "/products",
-    img: "/imgs/hoodie2.jpeg",
+    img: "/imgs/hoodies/hoodie2.jpeg",
   },
 ]
 

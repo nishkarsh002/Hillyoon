@@ -16,8 +16,8 @@ export default function BusinessInfoSection() {
                 </svg>
               </div>
               <h3 className="text-xs uppercase tracking-widest text-neutral-500 font-semibold mb-1.5">Email</h3>
-              <a href="mailto:Hillyoonexports@gmail.com" className="text-sm font-medium text-neutral-900 hover:text-[#c8a96e] transition-colors duration-200 break-all">
-                Hillyoonexports@gmail.com
+              <a href="mailto:info@hillyoonexports.com" className="text-sm font-medium text-neutral-900 hover:text-[#c8a96e] transition-colors duration-200 break-all">
+                info@hillyoonexports.com
               </a>
             </div>
 
@@ -75,6 +75,25 @@ export default function BusinessInfoSection() {
                 </svg>
                 X (Twitter)
               </a>
+              <a
+  href="https://linkedin.com/company/hillyoonexports"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn"
+  className="flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-200 text-sm text-neutral-700 hover:border-[#c8a96e] hover:text-[#c8a96e] transition-colors duration-200"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V23h-4V8zm7 0h3.83v2.05h.05c.53-1.01 1.84-2.08 3.79-2.08 4.05 0 4.8 2.67 4.8 6.14V23h-4v-7.09c0-1.69-.03-3.87-2.36-3.87-2.36 0-2.72 1.84-2.72 3.75V23h-4V8z" />
+  </svg>
+  LinkedIn
+</a>
             </div>
           </div>
 

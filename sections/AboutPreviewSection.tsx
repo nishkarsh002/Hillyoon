@@ -9,8 +9,8 @@ export default function AboutPreviewSection() {
           {/* Visual block */}
           <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
             <Image
-              src="/imgs/hoodie2.jpeg"
-              alt="hilooyoon collection"
+              src="/imgs/hoodies/hoodie2.jpeg"
+              alt="hillyoon collection"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -27,7 +27,7 @@ export default function AboutPreviewSection() {
               Built for Business Partnerships
             </h2>
             <p className="mt-5 text-base text-neutral-600 leading-relaxed">
-              hilooyoon was founded with a single belief — that quality wholesale clothing should be
+              hillyoon was founded with a single belief — that quality wholesale clothing should be
               accessible without compromise. We work directly with manufacturers and fabric mills to
               deliver consistent, premium apparel to retail partners across the region.
             </p>

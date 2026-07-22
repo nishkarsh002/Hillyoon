@@ -38,6 +38,28 @@ const SOCIAL_LINKS = [
       </svg>
     ),
   },
+  {
+  label: "LinkedIn",
+  href: "https://linkedin.com/company/hillyoonexports",
+  icon: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-12h4v2a4 4 0 0 1 4-2z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  ),
+},
 ]
 
 export default function Footer() {
@@ -47,17 +69,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 md:gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-3">
+            <Link href="/" className="inline-block mb-4">
               <Image
-                src="/imgs/image.png"
-                alt="hilooyoon"
-                width={160}
-                height={52}
-                className="h-12 w-auto object-contain"
-                style={{ mixBlendMode: "screen" }}
+                src="/imgs/logo-bg.png"
+                alt="hillyoon"
+                width={260}
+                height={90}
+                className="h-20 w-auto object-contain"
               />
             </Link>
-            <p className="text-sm text-neutral-400 leading-relaxed max-w-xs mb-5">
+            <p className="text-sm text-neutral-400 leading-relaxed max-w-sm mb-5">
               Premium Apparel Manufacturing &amp; Global Export Company.
             </p>
             {/* Social links */}
@@ -100,8 +121,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm text-neutral-300">
               <li>
-                <a href="mailto:Hillyoonexports@gmail.com" className="hover:text-[#c8a96e] transition-colors duration-200">
-                  Hillyoonexports@gmail.com
+                <a href="mailto:info@hillyoonexports.com" className="hover:text-[#c8a96e] transition-colors duration-200">
+                  info@hillyoonexports.com
                 </a>
               </li>
               <li>

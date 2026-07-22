@@ -46,7 +46,7 @@ export default function WhyChooseUsSection() {
             Our Advantages
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-neutral-900 leading-tight">
-            Why Choose hilooyoon?
+            Why Choose hillyoon?
           </h2>
           <p className="mt-4 text-base text-neutral-500 max-w-xl mx-auto">
             We are more than a supplier — we are a growth partner for your retail business.

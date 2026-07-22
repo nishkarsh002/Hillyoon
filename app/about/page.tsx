@@ -6,10 +6,10 @@ import TeamSection from "@/sections/TeamSection"
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about hilooyoon — our story, mission, and why B2B buyers choose us.",
+  description: "Learn about hillyoon — our story, mission, and why B2B buyers choose us.",
   openGraph: {
-    title: "About Us | hilooyoon",
-    description: "Learn about hilooyoon — our story, mission, and why B2B buyers choose us.",
+    title: "About Us | hillyoon",
+    description: "Learn about hillyoon — our story, mission, and why B2B buyers choose us.",
     type: "website",
   },
 }

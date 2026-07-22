@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This document defines the requirements for the **hilooyoon** B2B clothing brand website. The site is a static, multi-page marketing and product-showcase platform built with Next.js 16.2.10, React 19, TypeScript, and Tailwind CSS v4 using the App Router. It targets clothing retailers, wholesalers, and distributors, providing a professional online presence, product catalogue browsing, and a channel for business inquiries — with no backend in this phase.
+This document defines the requirements for the **hillyoon** B2B clothing brand website. The site is a static, multi-page marketing and product-showcase platform built with Next.js 16.2.10, React 19, TypeScript, and Tailwind CSS v4 using the App Router. It targets clothing retailers, wholesalers, and distributors, providing a professional online presence, product catalogue browsing, and a channel for business inquiries — with no backend in this phase.
 
 ## Glossary
 
-- **Website**: The hilooyoon Next.js application served at the root domain.
+- **Website**: The hillyoon Next.js application served at the root domain.
 - **Navbar**: The shared responsive navigation bar rendered at the top of every page.
 - **Footer**: The shared footer component rendered at the bottom of every page.
 - **Hero Section**: The full-width, large-banner introductory section on the Home page.
@@ -33,7 +33,7 @@ This document defines the requirements for the **hilooyoon** B2B clothing brand 
 
 1. THE Website SHALL render the Navbar at the top of every page using the root `app/layout.tsx`.
 2. THE Website SHALL render the Footer at the bottom of every page using the root `app/layout.tsx`.
-3. THE Navbar SHALL display the hilooyoon logo (`public/image.png`) as a clickable link to the Home page.
+3. THE Navbar SHALL display the hillyoon logo (`public/image.png`) as a clickable link to the Home page.
 4. THE Navbar SHALL include navigation links to Home (`/`), About Us (`/about`), Products (`/products`), and Contact Us (`/contact`).
 5. WHEN a B2B Visitor views the Website on a mobile viewport (width < 768 px), THE Navbar SHALL collapse the navigation links into a hamburger menu toggle.
 6. WHEN a B2B Visitor activates the hamburger menu toggle, THE Navbar SHALL display the navigation links in a vertical drawer or dropdown.
@@ -44,7 +44,7 @@ This document defines the requirements for the **hilooyoon** B2B clothing brand 
 
 ### Requirement 2 — Home Page
 
-**User Story:** As a B2B Visitor, I want an impactful home page that quickly communicates who hilooyoon is and what it offers, so that I can decide whether to explore further.
+**User Story:** As a B2B Visitor, I want an impactful home page that quickly communicates who hillyoon is and what it offers, so that I can decide whether to explore further.
 
 #### Acceptance Criteria
 
@@ -59,7 +59,7 @@ This document defines the requirements for the **hilooyoon** B2B clothing brand 
 
 ### Requirement 3 — About Us Page
 
-**User Story:** As a B2B Visitor, I want to read about hilooyoon's story, mission, and value proposition, so that I can evaluate them as a potential business partner.
+**User Story:** As a B2B Visitor, I want to read about hillyoon's story, mission, and value proposition, so that I can evaluate them as a potential business partner.
 
 #### Acceptance Criteria
 
@@ -110,7 +110,7 @@ This document defines the requirements for the **hilooyoon** B2B clothing brand 
 #### Acceptance Criteria
 
 1. THE Website SHALL export a root-level `Metadata` object from `app/layout.tsx` containing a default `<title>` template and a default `<meta description>`.
-2. THE Home page SHALL export SEO Metadata with a unique `<title>` and `<meta description>` describing hilooyoon's B2B offering.
+2. THE Home page SHALL export SEO Metadata with a unique `<title>` and `<meta description>` describing hillyoon's B2B offering.
 3. WHEN a page exports SEO Metadata, THE Website SHALL render the corresponding `<title>` and `<meta name="description">` tags in the document `<head>` using the Next.js Metadata API.
 4. THE Website SHALL include Open Graph tags (`og:title`, `og:description`, `og:type`) in each page's exported Metadata.
 

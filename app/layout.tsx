@@ -8,11 +8,11 @@ import "./globals.css"
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: { template: "%s | hilooyoon", default: "hilooyoon — B2B Clothing Brand" },
+  title: { template: "%s | hillyoon", default: "hillyoon — B2B Clothing Brand" },
   description:
-    "hilooyoon is a premium B2B clothing brand supplying businesses, wholesalers, and distributors with high-quality apparel.",
+    "hillyoon is a premium B2B clothing brand supplying businesses, wholesalers, and distributors with high-quality apparel.",
   openGraph: {
-    title: "hilooyoon — B2B Clothing Brand",
+    title: "hillyoon — B2B Clothing Brand",
     description: "Premium wholesale clothing for businesses and distributors.",
     type: "website",
   },

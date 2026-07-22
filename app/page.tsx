@@ -7,10 +7,10 @@ import CTASection from "@/sections/CTASection"
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Discover hilooyoon — premium B2B clothing for businesses and wholesalers.",
+  description: "Discover hillyoon — premium B2B clothing for businesses and wholesalers.",
   openGraph: {
-    title: "hilooyoon — Home",
-    description: "Discover hilooyoon — premium B2B clothing for businesses and wholesalers.",
+    title: "hillyoon — Home",
+    description: "Discover hillyoon — premium B2B clothing for businesses and wholesalers.",
     type: "website",
   },
 }

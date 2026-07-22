@@ -4,10 +4,10 @@ import { products } from "@/data/products"
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Browse the full hilooyoon product catalogue — wholesale apparel by category.",
+  description: "Browse the full hillyoon product catalogue — wholesale apparel by category.",
   openGraph: {
-    title: "Products | hilooyoon",
-    description: "Browse the full hilooyoon product catalogue.",
+    title: "Products | hillyoon",
+    description: "Browse the full hillyoon product catalogue.",
     type: "website",
   },
 }

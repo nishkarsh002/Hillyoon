@@ -20,17 +20,17 @@ import { cn } from "@/lib/utils";
 
 const Skiper49 = () => {
   const images = [
-    { src: "/imgs/tshirt.jpeg", alt: "Premium Tee Collection" },
-    { src: "/imgs/tshirt3.jpeg", alt: "Classic Crew Tee" },
-    { src: "/imgs/tshirt6.jpeg", alt: "Statement Graphic Tee" },
-    { src: "/imgs/hoodie.jpeg", alt: "Oversized Fleece Hoodie" },
-    { src: "/imgs/trouser.jpeg", alt: "Slim-Fit Chino Trouser" },
-    { src: "/imgs/lowers.jpeg", alt: "Track Lower" },
-    { src: "/imgs/hoodie2.jpeg", alt: "Co-ord Set Classic" },
-    { src: "/imgs/hoodie4.jpeg", alt: "Co-ord Set Premium" },
-    { src: "/imgs/shorts.jpeg", alt: "Utility Cargo Shorts" },
-    { src: "/imgs/lower1.jpeg", alt: "Premium Jogger" },
-    { src: "/imgs/tshirt3.jpeg", alt: "Branded Logo Tee" },
+    { src: "/imgs/tshirt/tshirt.jpeg", alt: "Premium Tee Collection" },
+    { src: "/imgs/tshirt/tshirt3.jpeg", alt: "Classic Crew Tee" },
+    { src: "/imgs/tshirt/tshirt6.jpeg", alt: "Statement Graphic Tee" },
+    { src: "/imgs/hoodies/hoodie.jpeg", alt: "Oversized Fleece Hoodie" },
+    { src: "/imgs/tshirt/tshirt2.jpeg", alt: "Slim-Fit Chino Trouser" },
+    { src: "/imgs/lower/lowers.jpeg", alt: "Track Lower" },
+    { src: "/imgs/hoodies/hoodie2.jpeg", alt: "Co-ord Set Classic" },
+    { src: "/imgs/hoodies/hoodie4.jpeg", alt: "Co-ord Set Premium" },
+    { src: "/imgs/shorts/shorts.jpeg", alt: "Utility Cargo Shorts" },
+    { src: "/imgs/lower/lower1.jpeg", alt: "Premium Jogger" },
+    { src: "/imgs/tshirt/tshirt3.jpeg", alt: "Branded Logo Tee" },
   ];
 
   return (

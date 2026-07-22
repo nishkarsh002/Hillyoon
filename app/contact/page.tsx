@@ -4,10 +4,10 @@ import BusinessInfoSection from "@/sections/BusinessInfoSection"
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with hilooyoon for wholesale and partnership inquiries.",
+  description: "Get in touch with hillyoon for wholesale and partnership inquiries.",
   openGraph: {
-    title: "Contact Us | hilooyoon",
-    description: "Get in touch with hilooyoon for wholesale and partnership inquiries.",
+    title: "Contact Us | hillyoon",
+    description: "Get in touch with hillyoon for wholesale and partnership inquiries.",
     type: "website",
   },
 }

@@ -6,17 +6,17 @@ const showcaseItems = [
   {
     title: "Craftsmanship",
     subtitle: "Premium apparel quality",
-    image: "/imgs/tshirt.jpeg",
+    image: "/imgs/tshirt/tshirt.jpeg",
   },
   {
     title: "Innovation",
     subtitle: "Modern style and fit",
-    image: "/imgs/hoodie.jpeg",
+    image: "/imgs/hoodies/hoodie.jpeg",
   },
   {
     title: "Reliability",
     subtitle: "Consistent bulk delivery",
-    image: "/imgs/trouser.jpeg",
+    image: "/imgs/tshirt/tshirt2.jpeg",
   },
 ]
 
