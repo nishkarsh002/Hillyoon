@@ -13,7 +13,7 @@ export const vision = `To become a trusted global partner in the apparel industr
 export const contactInfo = {
   email: "info@hillyoonexports.com",
   website: "www.hillyoon.com",
-  phone: "97189 94500",
+  phone: "+91 97189 94500",
   tagline: "Crafting Quality Apparel for Global Markets.",
 }
 

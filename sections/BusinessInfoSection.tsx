@@ -30,7 +30,7 @@ export default function BusinessInfoSection() {
               </div>
               <h3 className="text-xs uppercase tracking-widest text-neutral-500 font-semibold mb-1.5">Mobile</h3>
               <a href="tel:+919718994500" className="text-sm font-medium text-neutral-900 hover:text-[#c8a96e] transition-colors duration-200">
-                 97189 94500
+                 +91 97189 94500
               </a>
             </div>
 
